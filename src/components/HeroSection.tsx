@@ -62,7 +62,7 @@ export default function HeroSection({ onOpenOrderModal }: HeroSectionProps) {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-white hover:bg-[#fafffb] border-2 border-[#25D366]/60 hover:border-[#25D366] shadow-[0_4px_18px_rgba(37,211,102,0.22)] hover:shadow-[0_8px_28px_rgba(37,211,102,0.4)] transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+              className="group relative inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-white hover:bg-[#fafffb] border-2 border-[#25D366]/60 hover:border-[#25D366] shadow-[0_4px_18px_rgba(37,211,102,0.22)] hover:shadow-[0_8px_28px_rgba(37,211,102,0.4)] transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[64px]"
               title="تواصل معنا مباشرة عبر واتساب"
             >
               {/* Luxurious 3D WhatsApp Medallion Icon with Ripple Ping */}
@@ -94,12 +94,30 @@ export default function HeroSection({ onOpenOrderModal }: HeroSectionProps) {
               </div>
             </a>
 
+            {/* Ultra-Luxurious Golden COD Direct Order Button (Identical size, height & structure) */}
             <button
               onClick={onOpenOrderModal}
-              className="btn-yellow-gold text-xs sm:text-sm py-2.5 sm:py-3 px-5 sm:px-6 shadow-md"
+              className="group relative inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-gradient-to-r from-[#fdb813] via-[#f59e0b] to-[#fdb813] hover:from-[#f59e0b] hover:to-[#fdb813] text-[#071d40] border-2 border-[#f59e0b]/80 hover:border-[#b45309] shadow-[0_4px_18px_rgba(253,184,19,0.35)] hover:shadow-[0_8px_28px_rgba(253,184,19,0.55)] transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[64px]"
+              title="اضغط لطلب خدمة فورية بنظام الدفع عند الاستلام"
             >
-              <Layers className="w-4 h-4" />
-              <span>طلب خدمة الآن (COD)</span>
+              {/* Luxurious 3D Golden/Navy Medallion Icon with Ripple Ping */}
+              <div className="relative flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#071d40] shadow-[0_4px_12px_rgba(7,29,64,0.4)] border-2 border-[#fef08a] flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
+                {/* Subtle outer radar ring */}
+                <span className="absolute -inset-1 rounded-full bg-[#fdb813] opacity-35 animate-ping" />
+                {/* Layers Icon */}
+                <Layers className="w-5.5 h-5.5 sm:w-6 sm:h-6 text-[#fdb813] relative z-10 drop-shadow-sm" />
+              </div>
+
+              {/* Text Information Stack matching WhatsApp button */}
+              <div className="flex flex-col text-right">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#071d40] animate-pulse" />
+                  <span className="text-[11px] font-black text-[#071d40]/90 tracking-tight">دفع عند الاستلام • حجز فوري</span>
+                </div>
+                <span className="font-sans font-black text-xs sm:text-[13.5px] text-[#071d40] tracking-wide">
+                  طلب خدمة الآن (COD)
+                </span>
+              </div>
             </button>
           </div>
         </div>
