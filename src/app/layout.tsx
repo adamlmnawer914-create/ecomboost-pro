@@ -15,6 +15,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ecomboostpro.vercel.app"),
   title: "ECOMBOOST PRO — خدماتنا السبع المتكاملة لنجاح متجرك الإلكتروني",
   description:
     "Ecom Boost Pro: برمجة المتاجر الخاصة بدون اشتراكات شهرية، صفحات هبوط عالية التحويل، بوابات الدفع الدولية، إعلانات تيك توك وفيسبوك، وتطبيقات الهواتف الذكية. كل ما تحتاجه للنجاح من الصفر وحتى المبيعات.",
@@ -34,8 +35,13 @@ export const metadata: Metadata = {
     title: "ECOMBOOST PRO — خدماتنا السبع المتكاملة",
     description:
       "باقة الخدمات الرقمية الشاملة لنجاح متجرك الإلكتروني من الصفر وحتى تحقيق المبيعات المستمرة.",
+    url: "https://ecomboostpro.vercel.app",
+    siteName: "ECOMBOOST PRO",
     type: "website",
     locale: "ar_MA",
+  },
+  alternates: {
+    canonical: "https://ecomboostpro.vercel.app",
   },
 };
 

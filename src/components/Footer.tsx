@@ -81,7 +81,15 @@ export default function Footer({ onSelectService }: FooterProps) {
             <ul className="space-y-2.5 text-xs text-blue-200">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#10b981] flex-shrink-0" />
-                <span dir="ltr">{AGENCY_CONFIG.whatsappDisplay}</span>
+                <a
+                  href={`https://wa.me/${AGENCY_CONFIG.whatsappNumber.replace(/[^0-9]/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                  dir="ltr"
+                >
+                  {AGENCY_CONFIG.whatsappDisplay}
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#0066ff] flex-shrink-0" />
