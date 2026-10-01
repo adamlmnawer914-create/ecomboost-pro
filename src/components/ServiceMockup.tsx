@@ -81,36 +81,17 @@ export default function ServiceMockup({ serviceNumber }: ServiceMockupProps) {
       );
 
     case "03":
-      // حلول وبوابات الدفع الدولي: Stripe, Shopify, PayPal, Visa, Mastercard
+      // حلول وبوابات الدفع الدولي: Real user-provided image (1024x576, 16:9 full view)
       return (
-        <div className="relative w-full aspect-[346/132] bg-gradient-to-b from-[#081f4a] to-[#04122d] rounded-lg overflow-hidden flex flex-col items-center justify-center p-1.5 border border-[#1d4ed8]">
-          <div className="absolute inset-0 flex items-center justify-center opacity-20">
-            <Globe className="w-24 h-24 text-blue-400" />
-          </div>
-
-          <div className="relative z-10 w-full max-w-[170px] space-y-1">
-            <div className="flex items-center justify-center gap-1.5">
-              <div className="px-2 py-0.5 rounded bg-[#635bff] text-white font-black text-[10px] shadow border border-white/20">
-                stripe
-              </div>
-              <div className="px-2 py-0.5 rounded bg-[#95bf47] text-black font-black text-[9px] shadow border border-white/20">
-                🛍️ shopify
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center gap-1.5">
-              <div className="px-2 py-0.5 rounded bg-white text-[#1a1f71] font-black text-[9px] shadow">
-                VISA
-              </div>
-              <div className="px-2 py-0.5 rounded bg-white flex items-center gap-0.5 shadow">
-                <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-                <span className="w-2 h-2 rounded-full bg-amber-400 inline-block -mr-1" />
-              </div>
-              <div className="px-2 py-0.5 rounded bg-[#003087] text-white font-black text-[9px] shadow border border-blue-400">
-                PayPal
-              </div>
-            </div>
-          </div>
+        <div className="relative w-full aspect-[1024/576] bg-[#071328] rounded-lg overflow-hidden border border-[#1d4ed8] shadow-xs flex items-center justify-center">
+          <Image
+            src="/services/payment-gateways.jpg"
+            alt="حلول وبوابات الدفع الدولي"
+            fill
+            className="object-contain object-center transition-transform duration-300 group-hover:scale-102"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            priority
+          />
         </div>
       );
 

@@ -54,7 +54,7 @@ export default function ServicesGrid({ onSelectService }: ServicesGridProps) {
       <div
         key={service.id}
         onClick={() => onSelectService(service)}
-        className="service-card-exact group relative flex flex-col justify-between cursor-pointer"
+        className="service-card-exact group relative flex flex-col justify-between cursor-pointer h-full"
         title={`اضغط لطلب خدمة: ${service.title}`}
       >
         {/* Yellow Circular Number Badge on TOP-LEFT corner matching the image */}
