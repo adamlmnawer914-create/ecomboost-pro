@@ -54,21 +54,49 @@ export default function HeroSection({ onOpenOrderModal }: HeroSectionProps) {
           </div>
 
           {/* Quick Action Buttons on Header */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3.5">
+            {/* Ultra-Luxurious VIP WhatsApp Direct Button */}
             <a
-              href={`https://wa.me/${AGENCY_CONFIG.whatsappNumber.replace(/[^0-9]/g, "")}`}
+              href={`https://wa.me/${AGENCY_CONFIG.whatsappNumber.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
+                "السلام عليكم فريق Ecom Boost Pro، أرغب في استشارة سريعة حول خدماتكم لمتجري."
+              )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-white text-[#10b981] border border-[#b9d5fb] shadow-sm hover:shadow transition-all"
+              className="group relative inline-flex items-center gap-3 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl bg-white hover:bg-[#fafffb] border-2 border-[#25D366]/60 hover:border-[#25D366] shadow-[0_4px_18px_rgba(37,211,102,0.22)] hover:shadow-[0_8px_28px_rgba(37,211,102,0.4)] transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
+              title="تواصل معنا مباشرة عبر واتساب"
             >
-              <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse" />
-              <span>واتساب مباشر:</span>
-              <span dir="ltr" className="inline-block font-sans font-bold">{AGENCY_CONFIG.whatsappDisplay}</span>
+              {/* Luxurious 3D WhatsApp Medallion Icon with Ripple Ping */}
+              <div className="relative flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-[#0f766e] via-[#25D366] to-[#4ade80] shadow-[0_4px_14px_rgba(37,211,102,0.55)] border-2 border-white flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
+                {/* Subtle outer radar ring */}
+                <span className="absolute -inset-1 rounded-full bg-[#25D366] opacity-30 animate-ping" />
+                {/* Official WhatsApp Vector Emblem */}
+                <svg
+                  className="w-5.5 h-5.5 sm:w-6 sm:h-6 text-white fill-current relative z-10 drop-shadow-sm"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 20.15C10.57 20.15 9.12 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.68 12.04 3.68C14.25 3.68 16.31 4.54 17.87 6.1C19.42 7.66 20.28 9.72 20.28 11.93C20.28 16.48 16.59 20.15 12.05 20.15ZM16.57 14.36C16.32 14.23 15.1 13.63 14.88 13.55C14.65 13.47 14.49 13.43 14.32 13.68C14.16 13.93 13.69 14.49 13.54 14.65C13.4 14.82 13.25 14.84 13 14.71C12.75 14.59 11.95 14.33 11 13.49C10.26 12.83 9.76 12.02 9.61 11.77C9.47 11.52 9.6 11.39 9.72 11.26C9.83 11.15 9.97 10.97 10.1 10.82C10.22 10.67 10.26 10.57 10.34 10.4C10.42 10.24 10.38 10.1 10.32 9.97C10.26 9.85 9.77 8.64 9.56 8.14C9.36 7.65 9.16 7.72 9.01 7.71C8.87 7.7 8.7 7.7 8.54 7.7C8.38 7.7 8.11 7.76 7.89 8C7.66 8.25 7.03 8.84 7.03 10.04C7.03 11.24 7.9 12.39 8.03 12.56C8.15 12.72 9.75 15.2 12.21 16.26C12.79 16.51 13.25 16.66 13.6 16.77C14.19 16.96 14.73 16.93 15.16 16.87C15.64 16.8 16.64 16.27 16.85 15.68C17.06 15.09 17.06 14.59 17 14.49C16.93 14.4 16.81 14.36 16.57 14.36Z" />
+                </svg>
+              </div>
+
+              {/* Text Information Stack */}
+              <div className="flex flex-col text-right">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse" />
+                  <span className="text-[11px] font-black text-[#071d40] tracking-tight">واتساب مباشر • متاح الآن</span>
+                </div>
+                <span
+                  dir="ltr"
+                  className="font-sans font-black text-xs sm:text-[13.5px] text-[#071d40] group-hover:text-[#10b981] transition-colors tracking-wide"
+                >
+                  {AGENCY_CONFIG.whatsappDisplay}
+                </span>
+              </div>
             </a>
 
             <button
               onClick={onOpenOrderModal}
-              className="btn-yellow-gold text-xs sm:text-sm py-2.5 px-5"
+              className="btn-yellow-gold text-xs sm:text-sm py-2.5 sm:py-3 px-5 sm:px-6 shadow-md"
             >
               <Layers className="w-4 h-4" />
               <span>طلب خدمة الآن (COD)</span>
