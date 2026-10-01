@@ -62,7 +62,8 @@ export default function HeroSection({ onOpenOrderModal }: HeroSectionProps) {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-white text-[#10b981] border border-[#b9d5fb] shadow-sm hover:shadow transition-all"
             >
               <span className="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse" />
-              <span>واتساب مباشر: {AGENCY_CONFIG.whatsappDisplay}</span>
+              <span>واتساب مباشر:</span>
+              <span dir="ltr" className="inline-block font-sans font-bold">{AGENCY_CONFIG.whatsappDisplay}</span>
             </a>
 
             <button
