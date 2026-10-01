@@ -50,10 +50,6 @@ export default function ServicesGrid({ onSelectService }: ServicesGridProps) {
         key={service.id}
         onClick={() => onSelectService(service)}
         className="service-card-exact group relative flex flex-col justify-between cursor-pointer"
-        style={{
-          minHeight: "310px",
-          maxHeight: "350px",
-        }}
         title={`اضغط لطلب خدمة: ${service.title}`}
       >
         {/* Yellow Circular Number Badge on TOP-LEFT corner matching the image */}
@@ -69,29 +65,29 @@ export default function ServicesGrid({ onSelectService }: ServicesGridProps) {
         </div>
 
         {/* Card Body: Mockup + Description */}
-        <div className="p-3 sm:p-3.5 flex-1 flex flex-col justify-between bg-white space-y-2.5">
-          {/* Visual Mockup matching the image with compact proportional height */}
+        <div className="p-2.5 sm:p-3 flex-1 flex flex-col justify-between bg-white space-y-2 pb-5">
+          {/* Visual Mockup matching the image with compact exact aspect ratio */}
           <div className="w-full">
             <ServiceMockup serviceNumber={service.number} />
           </div>
 
-          {/* Description text matching the image */}
-          <div className="text-center px-1">
-            <p className="text-[11px] sm:text-xs font-bold text-[#071d40] leading-snug line-clamp-3">
+          {/* Description text matching the image with uniform height */}
+          <div className="text-center px-1 min-h-[42px] flex items-center justify-center">
+            <p className="text-[11px] sm:text-[11.5px] font-bold text-[#071d40] leading-snug line-clamp-3">
               {service.description}
             </p>
           </div>
 
-          {/* Subtle Hover Action Pill (appears cleanly on hover without stretching card) */}
+          {/* Subtle Hover Action Pill */}
           <div className="flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-            <span className="text-[10px] font-black text-[#0056d6] bg-blue-50 px-3 py-0.5 rounded-full border border-blue-200 shadow-xs">
+            <span className="text-[10px] font-black text-[#0056d6] bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200 shadow-2xs">
               اطلب الآن • {service.price} {service.currency}
             </span>
           </div>
         </div>
 
-        {/* Circular Bottom Icon on the card matching the image */}
-        <div className="relative pb-4 pt-1 flex justify-center bg-white border-t border-[#edf3fc]">
+        {/* Circular Bottom Icon centered overlapping bottom edge matching original banner */}
+        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-20">
           <div className="card-bottom-icon-btn">
             {getServiceCircularIcon(service.number)}
           </div>
@@ -106,14 +102,14 @@ export default function ServicesGrid({ onSelectService }: ServicesGridProps) {
       className="relative z-10 py-6 sm:py-8"
       dir="rtl"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Row 1: Exactly 4 Cards (01, 02, 03, 04) spanning full width */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-5 gap-y-10">
           {rowOne.map((service) => renderCard(service, false))}
         </div>
 
         {/* Row 2: Exactly 3 Cards (05, 06, 07) spanning the EXACT SAME full width */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 sm:gap-x-5 gap-y-10">
           {rowTwo.map((service) => renderCard(service, true))}
         </div>
       </div>
