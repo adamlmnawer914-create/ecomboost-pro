@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" rx="20" fill="#16161f"/>
+  <ellipse cx="200" cy="340" rx="80" ry="12" fill="#111118"/>
+  <!-- Watch body -->
+  <rect x="145" y="100" width="110" height="140" rx="25" fill="#1c1c28" stroke="#c8a548" stroke-width="3"/>
+  <!-- Screen -->
+  <rect x="158" y="118" width="84" height="100" rx="15" fill="#111118" stroke="#22222e" stroke-width="1"/>
+  <!-- Time display -->
+  <text x="200" y="165" font-family="sans-serif" font-size="28" font-weight="bold" fill="#c8a548" text-anchor="middle">10:42</text>
+  <!-- Date -->
+  <text x="200" y="185" font-family="sans-serif" font-size="10" fill="#9898a8" text-anchor="middle">الأربعاء ١ أكتوبر</text>
+  <!-- Health bar -->
+  <rect x="170" y="198" width="60" height="4" rx="2" fill="#22222e"/>
+  <rect x="170" y="198" width="42" height="4" rx="2" fill="#c8a548"/>
+  <!-- Heart icon hint -->
+  <circle cx="178" cy="210" r="3" fill="#c8a548" opacity="0.6"/>
+  <!-- Band top -->
+  <rect x="165" y="55" width="70" height="50" rx="8" fill="#1c1c28" stroke="#2a2a38" stroke-width="1.5"/>
+  <line x1="185" y1="65" x2="185" y2="95" stroke="#2a2a38" stroke-width="1"/>
+  <line x1="200" y1="65" x2="200" y2="95" stroke="#2a2a38" stroke-width="1"/>
+  <line x1="215" y1="65" x2="215" y2="95" stroke="#2a2a38" stroke-width="1"/>
+  <!-- Band bottom -->
+  <rect x="165" y="235" width="70" height="65" rx="8" fill="#1c1c28" stroke="#2a2a38" stroke-width="1.5"/>
+  <line x1="185" y1="245" x2="185" y2="290" stroke="#2a2a38" stroke-width="1"/>
+  <line x1="200" y1="245" x2="200" y2="290" stroke="#2a2a38" stroke-width="1"/>
+  <line x1="215" y1="245" x2="215" y2="290" stroke="#2a2a38" stroke-width="1"/>
+  <!-- Crown button -->
+  <rect x="255" y="155" width="10" height="20" rx="3" fill="#c8a548"/>
+</svg>

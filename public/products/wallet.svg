@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" rx="20" fill="#16161f"/>
+  <ellipse cx="200" cy="340" rx="90" ry="10" fill="#111118"/>
+  <!-- Wallet body -->
+  <rect x="100" y="130" width="200" height="140" rx="10" fill="#1c1c28" stroke="#c8a548" stroke-width="2.5"/>
+  <!-- Fold line -->
+  <line x1="100" y1="200" x2="300" y2="200" stroke="#2a2a38" stroke-width="1.5"/>
+  <!-- Card slots -->
+  <rect x="120" y="145" width="80" height="45" rx="5" fill="#22222e" stroke="#2a2a38" stroke-width="1"/>
+  <rect x="125" y="150" width="70" height="6" rx="2" fill="#c8a548" opacity="0.3"/>
+  <rect x="125" y="162" width="45" height="4" rx="2" fill="#2a2a38"/>
+  <rect x="125" y="172" width="55" height="4" rx="2" fill="#2a2a38"/>
+  <!-- RFID symbol -->
+  <path d="M250 165 Q260 155 260 170" stroke="#c8a548" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M255 160 Q270 150 270 175" stroke="#c8a548" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M260 155 Q280 145 280 180" stroke="#c8a548" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <!-- Bottom section -->
+  <rect x="120" y="210" width="160" height="45" rx="5" fill="#22222e" stroke="#2a2a38" stroke-width="1"/>
+  <rect x="135" y="225" width="50" height="15" rx="3" fill="#c8a548" opacity="0.2"/>
+  <!-- Carbon fiber pattern hint -->
+  <line x1="200" y1="210" x2="200" y2="255" stroke="#2a2a38" stroke-width="0.5" opacity="0.5"/>
+  <line x1="240" y1="210" x2="240" y2="255" stroke="#2a2a38" stroke-width="0.5" opacity="0.5"/>
+  <!-- Corner accent -->
+  <path d="M290 130 L300 130 L300 140" stroke="#c8a548" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M100 260 L100 270 L110 270" stroke="#c8a548" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>

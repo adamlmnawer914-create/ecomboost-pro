@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" rx="20" fill="#16161f"/>
+  <ellipse cx="200" cy="350" rx="90" ry="12" fill="#111118"/>
+  <!-- Bag body -->
+  <rect x="115" y="140" width="170" height="180" rx="12" fill="#1c1c28" stroke="#c8a548" stroke-width="2.5"/>
+  <!-- Flap -->
+  <path d="M115 180 Q115 140 200 130 Q285 140 285 180" fill="#1c1c28" stroke="#c8a548" stroke-width="2.5"/>
+  <!-- Clasp -->
+  <circle cx="200" cy="185" r="10" fill="#22222e" stroke="#c8a548" stroke-width="2"/>
+  <circle cx="200" cy="185" r="4" fill="#c8a548"/>
+  <!-- Handle -->
+  <path d="M160 140 Q160 90 200 80 Q240 90 240 140" stroke="#c8a548" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Stitching -->
+  <line x1="130" y1="200" x2="130" y2="310" stroke="#2a2a38" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="270" y1="200" x2="270" y2="310" stroke="#2a2a38" stroke-width="1" stroke-dasharray="6 4"/>
+  <!-- Pocket -->
+  <rect x="155" y="230" width="90" height="60" rx="6" fill="#22222e" stroke="#2a2a38" stroke-width="1"/>
+  <!-- Brand label -->
+  <rect x="175" y="245" width="50" height="12" rx="2" fill="#c8a548" opacity="0.3"/>
+</svg>

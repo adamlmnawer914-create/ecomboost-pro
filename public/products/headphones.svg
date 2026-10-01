@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" rx="20" fill="#16161f"/>
+  <ellipse cx="200" cy="330" rx="100" ry="15" fill="#111118"/>
+  <!-- Headband -->
+  <path d="M120 180 Q120 80 200 70 Q280 80 280 180" stroke="#c8a548" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Left cup -->
+  <rect x="95" y="165" width="60" height="80" rx="20" fill="#1c1c28" stroke="#c8a548" stroke-width="3"/>
+  <rect x="105" y="185" width="40" height="40" rx="20" fill="#22222e"/>
+  <circle cx="125" cy="205" r="12" fill="#2a2a38" stroke="#c8a548" stroke-width="1.5"/>
+  <!-- Right cup -->
+  <rect x="245" y="165" width="60" height="80" rx="20" fill="#1c1c28" stroke="#c8a548" stroke-width="3"/>
+  <rect x="255" y="185" width="40" height="40" rx="20" fill="#22222e"/>
+  <circle cx="275" cy="205" r="12" fill="#2a2a38" stroke="#c8a548" stroke-width="1.5"/>
+  <!-- Cushion details -->
+  <path d="M100 195 Q90 205 100 225" stroke="#c8a548" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M300 195 Q310 205 300 225" stroke="#c8a548" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Sound waves -->
+  <path d="M140 200 Q150 190 160 200" stroke="#c8a548" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M240 200 Q250 190 260 200" stroke="#c8a548" stroke-width="1.5" fill="none" opacity="0.3"/>
+</svg>

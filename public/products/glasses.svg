@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" rx="20" fill="#16161f"/>
+  <!-- Frame -->
+  <path d="M80 200 Q80 170 120 165 L175 160 Q200 158 225 160 L280 165 Q320 170 320 200 Q320 230 280 235 L225 238 Q200 240 175 238 L120 235 Q80 230 80 200Z" fill="#1c1c28" stroke="#c8a548" stroke-width="2.5"/>
+  <!-- Left lens -->
+  <ellipse cx="155" cy="200" rx="55" ry="30" fill="#111118" stroke="#c8a548" stroke-width="2"/>
+  <!-- Right lens -->
+  <ellipse cx="245" cy="200" rx="55" ry="30" fill="#111118" stroke="#c8a548" stroke-width="2"/>
+  <!-- Bridge -->
+  <path d="M180 195 Q200 185 220 195" stroke="#c8a548" stroke-width="2.5" fill="none"/>
+  <!-- Left arm -->
+  <path d="M100 190 Q60 188 40 195" stroke="#c8a548" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Right arm -->
+  <path d="M300 190 Q340 188 360 195" stroke="#c8a548" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Lens reflection -->
+  <path d="M130 185 Q140 180 150 185" stroke="#c8a548" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M220 185 Q230 180 240 185" stroke="#c8a548" stroke-width="1" fill="none" opacity="0.3"/>
+</svg>
