@@ -142,39 +142,17 @@ export default function ServiceMockup({ serviceNumber }: ServiceMockupProps) {
       );
 
     case "06":
-      // الإشهار وإدارة الحملات: TikTok + Meta Facebook + Instagram + Megaphone + Analytics
+      // الإشهار وإدارة الحملات: Real user-provided image (1024x1024, 1:1 full view)
       return (
-        <div className="relative w-full aspect-[346/132] bg-gradient-to-b from-[#0c2045] to-[#061226] rounded-lg overflow-hidden flex items-center justify-between p-2 border border-[#1e3a6d]">
-          {/* Social logos column */}
-          <div className="flex flex-col gap-0.5 z-10">
-            <div className="w-5 h-5 rounded bg-black text-white flex items-center justify-center text-[9px] font-black shadow border border-neutral-700">
-              🎵
-            </div>
-            <div className="w-5 h-5 rounded bg-[#1877f2] text-white flex items-center justify-center text-[10px] font-black shadow">
-              f
-            </div>
-            <div className="w-5 h-5 rounded bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white flex items-center justify-center text-[9px] font-bold shadow">
-              📷
-            </div>
-          </div>
-
-          {/* Megaphone in Center */}
-          <div className="w-11 h-11 rounded-full bg-[#0056d6] text-white flex items-center justify-center shadow border-2 border-white z-10">
-            <Megaphone className="w-5 h-5 text-yellow-300" />
-          </div>
-
-          {/* Analytics Bars on Right */}
-          <div className="w-20 bg-[#162744] rounded p-1 border border-[#2d4770] flex flex-col justify-end h-18 shadow">
-            <div className="text-[5px] text-green-400 font-bold text-center mb-0.5">
-              ROAS +450%
-            </div>
-            <div className="flex items-end justify-between h-11 gap-1 px-0.5">
-              <div className="w-2.5 h-4 bg-blue-400 rounded-t-xs" />
-              <div className="w-2.5 h-6 bg-blue-500 rounded-t-xs" />
-              <div className="w-2.5 h-9 bg-[#0066ff] rounded-t-xs" />
-              <div className="w-2.5 h-11 bg-[#fdb813] rounded-t-xs" />
-            </div>
-          </div>
+        <div className="relative w-full aspect-square bg-[#0b162c] rounded-lg overflow-hidden border border-[#1e3a6d] shadow-xs flex items-center justify-center">
+          <Image
+            src="/services/marketing-campaigns.jpg"
+            alt="الإشهار وإدارة الحملات"
+            fill
+            className="object-contain object-center transition-transform duration-300 group-hover:scale-102"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
+          />
         </div>
       );
 
